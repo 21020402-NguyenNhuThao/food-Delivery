@@ -81,7 +81,7 @@ export default function ProfileScreen() {
           <Form.Control
             type="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            // onChange={(e) => setEmail(e.target.value)}
             required
           />
         </Form.Group>
@@ -92,13 +92,13 @@ export default function ProfileScreen() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="password">
+        {/* <Form.Group className="mb-3" controlId="password">
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control
             type="password"
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
-        </Form.Group>
+        </Form.Group> */}
         <div className="mb-3">
           <Button type="submit">Update</Button>
         </div>

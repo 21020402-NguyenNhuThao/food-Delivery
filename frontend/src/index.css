@@ -183,7 +183,7 @@ button.thumbnail {
 }
 
 /*card*/
-.Pcard:hover .card-title::after {
+.card {
   transition: transform 0.3s;
   border: 1px solid #c3f0cb;
 }
@@ -218,7 +218,7 @@ button.thumbnail {
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
 }
-.card:hover .card-title::after {
+.Pcard:hover .card-title::after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);

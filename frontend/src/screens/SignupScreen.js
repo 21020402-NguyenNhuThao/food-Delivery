@@ -24,6 +24,10 @@ export default function SignupScreen() {
   const { userInfo } = state;
   const submitHandler = async (e) => {
     e.preventDefault();
+    if(password.length <= 5) {
+      toast.error('Your password has more 6 characters')
+      return
+    }
     if (password !== confirmPassword) {
       toast.error('Passwords do not match');
       return;
@@ -41,12 +45,15 @@ export default function SignupScreen() {
       toast.error(getError(err));
     }
   };
+  
 
   useEffect(() => {
     if (userInfo) {
       navigate(redirect);
     }
   }, [navigate, redirect, userInfo]);
+
+  
 
   return (
     <Container className="small-container">
